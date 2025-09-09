@@ -1,0 +1,13 @@
+[Unit]
+Description=Simple Python Web Server
+After=network.target
+
+[Service]
+ExecStart=/usr/local/bin/webserver.sh
+WorkingDirectory=/var/www/myweb
+Restart=always
+User=nobody
+Group=nogroup
+
+[Install]
+WantedBy=multi-user.target
