@@ -1,0 +1,14 @@
+{
+  "serviceName": "my-ecs-service",
+  "cluster": "my-ecs-cluster",
+  "taskDefinition": "my-ecs-task",
+  "desiredCount": 1,
+  "launchType": "FARGATE",
+  "networkConfiguration": {
+    "awsvpcConfiguration": {
+      "assignPublicIp": "ENABLED",
+      "subnets": ["subnet-089bfd253c407d8b3"],
+      "securityGroups": ["sg-001155c15bcd5d742"]
+    }
+  }
+}
